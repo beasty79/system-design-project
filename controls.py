@@ -64,19 +64,19 @@ class Controls:
         print(self.speed)
 
 
-async def main():
-    controls = Controls(None, None)
-    await controls.change_speed(50, 50)
+# async def main():
+#     controls = Controls(None, None)
+#     await controls.change_speed(50, 50)
 
-    for _ in range(30):
-        sleep(.1)
-        await controls.tick()
+#     for _ in range(30):
+#         sleep(.1)
+#         await controls.tick()
 
-    await controls.turn_angle(90)
+#     await controls.turn_angle(90)
 
-    while True:
-        await controls.tick()
-        sleep(.1)
+#     while True:
+#         await controls.tick()
+#         sleep(.1)
 
-if __name__ == "__main__":
-    asyncio.run(main=main())
+# if __name__ == "__main__":
+    # asyncio.run(main=main())
